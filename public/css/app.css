@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500&display=swap');
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #F4EFEA;
+}
+.containernav {
+  max-width: 75rem;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.containernav .logo img {
+  height: 50px;
+  margin-right: auto;
+}
+
+.containernav .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.containernav .listnav li {
+  list-style-type: none;
+}
+
+.containernav .listnav li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border-style: dashed;
+  border-color: #479F76;
+  border-width: medium;
+  transition: all .2s ease-in-out;
+}
+
+.containernav .listnav li:hover a {
+  background-color:#479F76;
+  color: rgb(0, 0, 0);
+}
+  
+.logobesar{
+  margin: 2px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.isi-konten {
+  width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
+.isi-konten2 {
+  width: 100px;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  object-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.main{
+  padding: 2rem 4rem;
+  z-index: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.main .utama{
+  flex: 1  1 ;
+}
+.main .aside{
+  flex: 1 ;
+  display: flex;
+  
+}
+.konten1{
+  margin: 10px;
+  padding: 1px;
+}
+.konten2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left ;
+  margin-top:10px;
+  padding-top: 2px;
+}
+  
+.konten2 .deskripsi-konten {
+  flex: 1 1;
+}
+  
+.konten2 .deskripsi-konten .judul {
+  font-size: 20px;
+  margin-block: 1rem;
+}
+  
+.konten2.deskripsi-konten p {
+  line-height: 1.5;
+  font-size: 15px;
+
+}
+.konten2 .gambar-konten {
+  flex: 1;
+  display: flex;
+}
+  
+.konten2 .gambar-konten img {
+  min-width: 250px;
+  width: 80%;
+  margin-left: 0;
+  margin-right: auto;
+  border-radius: 10%;
+}
+.box{
+  box-shadow:hsla(hue, saturation, lightness, alpha);
+  position: cen;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #7ed4ac9d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.boxtb{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.titlebio{
+  text-align: center;
+}
+.table.biodata {
+  justify-content: center;
+  text-align: center;
+}
+.biodata tr{
+  text-align: center;
+}
+.biodata a{
+  font-size:25px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.biodata {
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  padding: 5px;
+  color: white;
+  background-color: #479F76;
+  text-align: center;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+      flex-direction: column;
+  }
+
+  aside {
+      flex: 0 0 100%;
+      margin-left: 0;
+  }
+  .konten2 {
+    flex-direction: column;
+    text-align: justify;
+
+  }
+  .konten2 .gambar-konten img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .konten2.deskripsi-konten p {
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+  
+  
